@@ -1,0 +1,130 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    }
+
+    .navbar{
+        background: #ebe8e8;
+    }
+
+.container{
+    margin-left: 2%;
+}
+.main{
+    margin-top: 5%;
+}
+
+.heading{
+    margin-left: 6.5%;
+}
+
+    .heading  b{
+        font-size: 5vh;
+        text-align: center;
+    }
+    .heading b span{
+        color: #771633;
+    }
+    .caption{
+        font-size: 2.5vh;
+     
+    }
+    .userguide{
+        font-size: 150%;
+    }
+    .footer{
+        background: #bbbbbb;
+        padding: 1%;
+        font-size: 90%;
+       
+        text-align: center;
+    }
+    .footer a{
+        text-decoration: none;
+        color: #771633;
+    }
+    .footer a:hover{
+        color: #771633;
+    }
+    .heading a{
+        text-decoration: none;
+        color: black;
+    }
+.heading a:hover{
+    color: black;
+}
+.screenshots{
+margin: 5%;
+}
+
+
+
+    @media screen and (max-width:900px) {
+        .heading{
+            margin-left: 5%;
+        }
+        
+            .heading  b{
+                font-size: 120%;
+                text-align: center;
+            }
+            .heading b span{
+                color: #771633;
+            }
+            .caption{
+                font-size: 50%;
+             
+            }
+            .userguide{
+                font-size: 100%;
+            }
+            .footer{
+                background: #bbbbbb;
+                padding: 1%;
+                font-size: 60%;
+               
+                text-align: center;
+            }
+    }
+
+
+    /* animation */
+    .container {
+        animation: transitionIn 1.5s;
+    }
+    .navbar{
+        animation: transitionUp 2.4s; 
+    }
+    .footer{
+        animation: transitionUp 2.4s; 
+    }
+    
+    
+    
+    @keyframes transitionIn{
+    
+        from{
+            opacity: 0;
+            transform: rotateX(-10deg);
+        }
+        to{
+            opacity: 1;
+            transform: rotateX(0);
+        }
+    }
+    
+     @keyframes transitionUp{
+    
+        from{
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
